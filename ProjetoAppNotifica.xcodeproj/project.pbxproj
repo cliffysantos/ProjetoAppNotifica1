@@ -17,6 +17,10 @@
 		A50F3C472A28DFFB006471DF /* ProjetoAppNotificaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F3C462A28DFFB006471DF /* ProjetoAppNotificaTests.swift */; };
 		A50F3C512A28DFFB006471DF /* ProjetoAppNotificaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F3C502A28DFFB006471DF /* ProjetoAppNotificaUITests.swift */; };
 		A50F3C532A28DFFB006471DF /* ProjetoAppNotificaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F3C522A28DFFB006471DF /* ProjetoAppNotificaUITestsLaunchTests.swift */; };
+		A50F3C622A2E1C6C006471DF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F3C612A2E1C6B006471DF /* Coordinator.swift */; };
+		A50F3C642A2E1D06006471DF /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F3C632A2E1D06006471DF /* LoginCoordinator.swift */; };
+		A50F3C672A2E1FF8006471DF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F3C662A2E1FF8006471DF /* LoginView.swift */; };
+		A50F3C692A2E2016006471DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F3C682A2E2016006471DF /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		A50F3C4C2A28DFFB006471DF /* ProjetoAppNotificaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjetoAppNotificaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50F3C502A28DFFB006471DF /* ProjetoAppNotificaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoAppNotificaUITests.swift; sourceTree = "<group>"; };
 		A50F3C522A28DFFB006471DF /* ProjetoAppNotificaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoAppNotificaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A50F3C612A2E1C6B006471DF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A50F3C632A2E1D06006471DF /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		A50F3C662A2E1FF8006471DF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A50F3C682A2E2016006471DF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +109,9 @@
 		A50F3C2B2A28DFF7006471DF /* ProjetoAppNotifica */ = {
 			isa = PBXGroup;
 			children = (
-				A50F3C2C2A28DFF7006471DF /* AppDelegate.swift */,
-				A50F3C2E2A28DFF7006471DF /* SceneDelegate.swift */,
-				A50F3C302A28DFF7006471DF /* ViewController.swift */,
-				A50F3C322A28DFF7006471DF /* Main.storyboard */,
-				A50F3C382A28DFFA006471DF /* Assets.xcassets */,
-				A50F3C3A2A28DFFA006471DF /* LaunchScreen.storyboard */,
+				A50F3C652A2E1FCB006471DF /* Controller */,
+				A50F3C602A2E1C18006471DF /* Coordinator */,
+				A50F3C5F2A2E1758006471DF /* Resource */,
 				A50F3C3D2A28DFFA006471DF /* Info.plist */,
 				A50F3C352A28DFF7006471DF /* ProjetoAppNotifica.xcdatamodeld */,
 			);
@@ -128,6 +133,37 @@
 				A50F3C522A28DFFB006471DF /* ProjetoAppNotificaUITestsLaunchTests.swift */,
 			);
 			path = ProjetoAppNotificaUITests;
+			sourceTree = "<group>";
+		};
+		A50F3C5F2A2E1758006471DF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A50F3C2C2A28DFF7006471DF /* AppDelegate.swift */,
+				A50F3C2E2A28DFF7006471DF /* SceneDelegate.swift */,
+				A50F3C302A28DFF7006471DF /* ViewController.swift */,
+				A50F3C322A28DFF7006471DF /* Main.storyboard */,
+				A50F3C382A28DFFA006471DF /* Assets.xcassets */,
+				A50F3C3A2A28DFFA006471DF /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A50F3C602A2E1C18006471DF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A50F3C612A2E1C6B006471DF /* Coordinator.swift */,
+				A50F3C632A2E1D06006471DF /* LoginCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A50F3C652A2E1FCB006471DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A50F3C662A2E1FF8006471DF /* LoginView.swift */,
+				A50F3C682A2E2016006471DF /* LoginViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50F3C642A2E1D06006471DF /* LoginCoordinator.swift in Sources */,
+				A50F3C672A2E1FF8006471DF /* LoginView.swift in Sources */,
 				A50F3C372A28DFF7006471DF /* ProjetoAppNotifica.xcdatamodeld in Sources */,
 				A50F3C312A28DFF7006471DF /* ViewController.swift in Sources */,
+				A50F3C692A2E2016006471DF /* LoginViewController.swift in Sources */,
+				A50F3C622A2E1C6C006471DF /* Coordinator.swift in Sources */,
 				A50F3C2D2A28DFF7006471DF /* AppDelegate.swift in Sources */,
 				A50F3C2F2A28DFF7006471DF /* SceneDelegate.swift in Sources */,
 			);
